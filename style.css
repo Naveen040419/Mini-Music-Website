@@ -1,0 +1,243 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.light-theme {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.dark-theme {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+.theme-label {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.left-panel,
+.center-panel,
+.right-panel {
+  background: #7ec9f3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.left-panel {
+  width: 22%;
+}
+
+.center-panel {
+  width: 45%;
+  text-align: center;
+}
+
+.center-panel audio{
+  margin-top : 20px;
+}
+
+.right-panel {
+  width: 30%;
+}
+
+.song-card {
+  background: #2490d9;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.song-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.song-btn {
+  display: block;
+  width: 100%;
+  margin: 6px 0;
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.song-btn:hover {
+  background: #0d47a1;
+}
+
+.playlist-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.create-btn {
+  background: #7f3af7;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 6px;
+  font-size: 14px;
+}
+
+/* Toggle switch styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #333;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+
+/* Container for buttons */
+.action-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  gap: 15px; /* adds spacing between control group and playlist button */
+}
+
+/* Forward/Back buttons */
+.controls {
+  display: flex;
+  gap: 20px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  background-color: #a264f3;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.controls button:hover {
+  background-color: #7f3af7;
+}
+
+/* Add to Playlist Button */
+.add-to-playlist {
+  padding: 10px 15px;
+  background-color: #a264f3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-to-playlist:hover {
+  background-color: #7f3af7;
+}
+
+.action-controls{
+  display: none;
+}
+
+.playlist{
+  padding: 10px 15px;
+  background-color: #1976d2; ;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-align:center;
+}
+
+#playlist-songs {
+  margin-top: 20px;
+}
+
+.songs-list {
+  margin-top: 10px;
+}
+
+.songs-list button {
+  display: block;
+  margin: 5px 0;
+  background-color: #1976d2;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.playlist{
+  margin : 10px auto;
+}
