@@ -7,8 +7,14 @@
   border-radius: 10px;
 }
 
+:root {
+  --primary-family: Arial, sans-serif;
+  --font-size-large: 20px;
+  --padding-small: 8px;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--primary-family);
   margin: 0;
   padding: 0;
   transition: background 0.3s, color 0.3s;
